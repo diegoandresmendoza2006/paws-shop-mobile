@@ -1,4 +1,4 @@
-# Paws&Shop (app móvil)
+q# Paws&Shop (app móvil)
 
 Aplicación **Flutter** de **adopción de mascotas y tienda solidaria**. Los usuarios adoptan y compran;
 los encargados gestionan su refugio; el administrador supervisa todo el sistema.
