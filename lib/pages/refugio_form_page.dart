@@ -98,7 +98,7 @@ class _FormularioState extends State<_Formulario> {
             obligatorio: false,
             maxLongitud: 20,
             teclado: TextInputType.phone,
-            pista: 'Ej: 310 123 4567',
+            pista: 'Ej: 310...',
             validador: (v) => (v ?? '').trim().isEmpty ? null : validarTelefono(v),
           ),
           const SizedBox(height: 20),

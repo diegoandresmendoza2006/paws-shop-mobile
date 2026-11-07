@@ -187,7 +187,7 @@ class _FormularioState extends State<_Formulario> {
                       etiqueta: 'Teléfono celular',
                       controlador: _telefono,
                       teclado: TextInputType.phone,
-                      pista: 'Ej: 3101234567',
+                      pista: 'Ej: 310...',
                       maxLongitud: 10,
                       formateadores: [FilteringTextInputFormatter.digitsOnly],
                       validador: validarTelefono,

@@ -221,7 +221,7 @@ class _ContenidoState extends State<_Contenido> {
                                 controlador: _telefono,
                                 teclado: TextInputType.phone,
                                 accion: TextInputAction.next,
-                                pista: 'Ej: 3101234567',
+                                pista: 'Ej: 310...',
                                 maxLongitud: 10,
                                 formateadores: [FilteringTextInputFormatter.digitsOnly],
                                 validador: validarTelefono,
