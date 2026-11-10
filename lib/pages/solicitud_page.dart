@@ -303,6 +303,11 @@ class _TusDatos extends StatelessWidget {
                 style: Theme.of(context).textTheme.titleSmall),
             const SizedBox(height: 6),
             FilaDato(etiqueta: 'Nombre', valor: usuario.nombreCompleto),
+            FilaDato(
+                etiqueta: 'Documento',
+                valor: (usuario.numeroDocumento ?? '').isEmpty
+                    ? null
+                    : '${usuario.tipoDocumento ?? ''} ${usuario.numeroDocumento}'.trim()),
             FilaDato(etiqueta: 'Nacimiento', valor: f == null ? null : fechaLegible(f)),
             FilaDato(etiqueta: 'Teléfono', valor: usuario.telefono),
             FilaDato(etiqueta: 'Correo', valor: usuario.email),
