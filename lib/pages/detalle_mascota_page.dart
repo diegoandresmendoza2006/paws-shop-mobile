@@ -9,6 +9,7 @@ import '../models/mascota.dart';
 import '../widgets/etiqueta_estado.dart';
 import '../widgets/fila_dato.dart';
 import '../widgets/foto_mascota.dart';
+import '../widgets/tarjeta_refugio.dart';
 import 'solicitud_page.dart';
 
 /// Detalle de una mascota. El botón "Quiero adoptar" solo lo ve un usuario y solo si está disponible.
@@ -69,6 +70,8 @@ class DetalleMascotaPage extends StatelessWidget {
                 Text((mascota.descripcion ?? '').trim().isEmpty
                     ? 'Todavía no tiene una descripción.'
                     : mascota.descripcion!),
+                const SizedBox(height: 16),
+                TarjetaRefugio(refugioId: mascota.refugioId),
                 const SizedBox(height: 24),
                 if (esUsuario && disponible)
                   FilledButton.icon(

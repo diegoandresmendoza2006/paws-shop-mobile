@@ -20,6 +20,7 @@ import '../widgets/foto_mascota.dart';
 import '../widgets/mensaje_error.dart';
 import '../widgets/mostrar_aviso.dart';
 import '../widgets/pregunta_si_no.dart';
+import '../widgets/tarjeta_refugio.dart';
 import 'perfil_page.dart';
 
 /// Formulario de adopción. Empieza en "Vivienda": los datos personales ya vienen del registro
@@ -298,6 +299,8 @@ class _TusDatos extends StatelessWidget {
                 ),
               ],
             ),
+            const SizedBox(height: 12),
+            TarjetaRefugio(refugioId: mascota.refugioId),
             const Divider(height: 24),
             Text('Tus datos (los tomamos de tu perfil)',
                 style: Theme.of(context).textTheme.titleSmall),
